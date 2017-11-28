@@ -15,7 +15,9 @@
     width: 100%;
 }
 
-.wrapper-inner {
+.wrapper-inner,
+main,
+.footer {
     width: 1230px;
     margin: 0 auto;
 }
@@ -29,4 +31,138 @@ header[role="banner"] .wrapper-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+a.logo {
+    text-decoration: none; /*don't work*/
+    font-size: 12px;
+}
+
+nav li {
+    font-size: 12px;
+    text-decoration: none; /*don't work*/
+}
+
+.header-phone-number,
+.header-phone span,
+.footer-phone-number,
+.footer-phone-number span {
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.header-phone-callback {
+    font-size: 16px;
+    color: #0099ff;
+    text-decoration: none;
+}
+
+.header-phone-number span,
+.footer-phone-number span {
+    color: #0099ff;
+}
+
+    /********************************************/
+
+main {
+    padding: 30px 0;
+}
+
+main p {
+    line-height: 1.5;
+    margin: 30px 0;
+    font-weight: 300;
+    /*-moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;*/
+}
+
+p a {
+    color: #0099ff;
+}
+
+.main-image {
+    float: left;
+    width: 447px;
+    height: 273px;
+    margin: 5px 45px 45px 0;
+    background: #0b466f;
+    border: 10px solid #ffffff;
+    box-shadow: 0 0 25px 5px #ebebeb ;
+}
+
+.clear:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    list-style-type: none;
+}
+
+main li {
+    line-height: 3;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*main li:before {
+    color: #00acee;
+    content: "—";
+    font-weight: bold;
+    padding-right: 15px;
+}*/
+
+h1,
+nav li,
+a.logo,
+.header-phone-callback {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #0099ff;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #0b456d;
+}
+/*end content*/
+
+footer {
+    background: #f0f0f0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.mail {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0099ff;
+}
+
+.copyright p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.producer span {
+    font-size: 15px;
+    font-weight: 300;
 }
