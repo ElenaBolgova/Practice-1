@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+}
+
+.wrapper-inner {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+header[role="banner"] {
+    border-bottom: 10px solid #f1f1f1;
+    padding: 40px 0;
+}
+
+header[role="banner"] .wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
