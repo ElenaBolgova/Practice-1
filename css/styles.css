@@ -33,27 +33,41 @@ header[role="banner"] .wrapper-inner {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logo span {
     font-size: 12px;
     text-transform: uppercase;
-    text-align: center;
-    text-decoration: none; /*don't worked*/
+    text-decoration: none;
 }
 
 .logo img {
-    display: block;
     margin-bottom: 10px;
 }
 
 nav li {
-    display: inline; /* Отображать как строчный элемент */
+    display: inline;
     margin-right: 17px;
+}
+
+nav li:last-child {
+    margin-right: 0;
 }
 
 header a,
 footer a {
     font-size: 12px;
     text-decoration: none;
+}
+
+.header-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .header-phone-number,
@@ -66,8 +80,13 @@ footer a {
     text-decoration: none;
 }
 
-.header-phone-number {
-    display: block;
+.header-phone-number span,
+.footer-phone-number span {
+    color: #0099ff;
+}
+
+.header-phone-callback img {
+    margin-right: 12px;
 }
 
 .header-phone-callback {
@@ -76,17 +95,13 @@ footer a {
     text-decoration: none;
 }
 
-.header-phone-number span,
-.footer-phone-number span {
-    color: #0099ff;
-}
-
 h1,
 li a,
 .logo span,
 .header-phone-callback {
     text-transform: uppercase;
 }
+
 /********************************************/
 
 main {
@@ -122,15 +137,15 @@ p a {
     clear: both;
 }
 
-li {
-    list-style-type: none;
-}
-
 main li {
     line-height: 2;
     margin-left: 30px;
     font-size: 15px;
     font-weight: 300;
+}
+
+li {
+    list-style-type: none;
 }
 
 main li:before {
@@ -141,20 +156,21 @@ main li:before {
     padding-right: 25px;
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #0b456d;
+}
+
 h2 {
     font-size: 22px;
     font-weight: 500;
     color: #0099ff;
 }
 
-h1 {
-    font-size: 30px;
-    font-weight: 300;
-    color: #0b456d;
-}
-/*end content*/
+/*****************************************/
 
-footer {
+footer[role="contentinfo"] {
     background: #f0f0f0;
 }
 
@@ -162,11 +178,30 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 70px 0;
+}
+
+.composite-copyright {
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright {
+    align-self: center;
+    margin-left: 20px;
+}
+
+.footer-left-info p {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .footer-left-info {
-    font-size: 14px;
-    font-weight: 300;
+    margin-top: 30px;
+}
+
+.wrapper-mail {
+    margin-top: 15px;
 }
 
 .mail {
@@ -181,7 +216,15 @@ footer {
     font-weight: bold;
 }
 
-.producer span {
-    font-size: 15px;
-    font-weight: 300;
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.producer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
 }
