@@ -33,14 +33,27 @@ header[role="banner"] .wrapper-inner {
     align-items: center;
 }
 
-a.logo {
-    text-decoration: none; /*don't work*/
+.logo span {
     font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none; /*don't worked*/
+}
+
+.logo img {
+    display: block;
+    margin-bottom: 10px;
 }
 
 nav li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 17px;
+}
+
+header a,
+footer a {
     font-size: 12px;
-    text-decoration: none; /*don't work*/
+    text-decoration: none;
 }
 
 .header-phone-number,
@@ -49,7 +62,12 @@ nav li {
 .footer-phone-number span {
     font-size: 30px;
     font-weight: 300;
+    margin-bottom: 20px;
     text-decoration: none;
+}
+
+.header-phone-number {
+    display: block;
 }
 
 .header-phone-callback {
@@ -63,7 +81,13 @@ nav li {
     color: #0099ff;
 }
 
-    /********************************************/
+h1,
+li a,
+.logo span,
+.header-phone-callback {
+    text-transform: uppercase;
+}
+/********************************************/
 
 main {
     padding: 30px 0;
@@ -103,24 +127,18 @@ li {
 }
 
 main li {
-    line-height: 3;
+    line-height: 2;
     margin-left: 30px;
     font-size: 15px;
     font-weight: 300;
 }
 
-/*main li:before {
+main li:before {
     color: #00acee;
     content: "—";
     font-weight: bold;
-    padding-right: 15px;
-}*/
-
-h1,
-nav li,
-a.logo,
-.header-phone-callback {
-    text-transform: uppercase;
+    font-size: 20px;
+    padding-right: 25px;
 }
 
 h2 {
@@ -146,7 +164,7 @@ footer {
     align-items: center;
 }
 
-.footer-info {
+.footer-left-info {
     font-size: 14px;
     font-weight: 300;
 }
@@ -154,6 +172,7 @@ footer {
 .mail {
     font-size: 15px;
     font-weight: 500;
+    text-decoration: underline;
     color: #0099ff;
 }
 
